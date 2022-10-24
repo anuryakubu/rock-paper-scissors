@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./main.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rock, Paper, Scissors</h1>
+            <h3>You Vs. Computer</h3>
+        </div>
+        <div class="holder">
+            <div class="player">
+                <h3>Player</h3>
+                <div class="imgBack">
+                    <img id="src-id" src="./img/combo-all.png" width="300px" height="300px" alt="default"> 
+                </div>
+                
+                
+                <div class="select">
+                    <label for="type">Select:
+                        <select name="type" id="type">
+                            <option disabled selected>*Select here*</option>
+                            <option value="rock">Rock</option>
+                            <option value="paper">Paper</option>
+                            <option value="scissors">Scissors</option>
+                        </select>
+                    </label>
+                </div>
+                
+                
+            </div>
+            <div class="img">
+                
+            </div>
+
+            <div class="computer">
+                <h3>Computer</h3>
+                <div class="imgBack">
+                    <img id="srcComp-id" src="./img/combo-all.png" width="300px" height="300px" alt="default">
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="shape">
+            <div id="green"></div>
+            <div id="red"></div>
+            <div id="blue"></div>
+        </div>
+
+        <div class="chooseGame">
+            <button type="button" class="submit" id="best5">Best of 5</button>
+            <button type="button" class="submit" id="round5">5 Rounds</button>
+        </div>
+
+        <div class="round">
+            <div id="displayRound">Round: 0</div>
+        </div>
+
+
+        <div>
+            <button type="button" class="submit" id="play">Play</button>
+            <button type="button" class="submit" id="reset">Reset</button>
+            
+        </div>
+        
+        <div class="span">
+                <span id="p-win">Player Wins: 0</span>
+                <span id="tie">Tie: 0</span>
+                <span id="comp-win">Computer Wins: 0</span>
+                
+        </div>
+        <div id='display'>
+
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
